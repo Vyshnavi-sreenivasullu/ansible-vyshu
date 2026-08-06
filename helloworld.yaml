@@ -1,6 +1,6 @@
 
 - name: ping the server
-  hosts: local
+  hosts: frontend
   connection: local
   tasks: 
    - name: Print the helloworld
