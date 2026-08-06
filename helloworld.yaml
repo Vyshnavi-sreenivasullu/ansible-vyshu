@@ -5,4 +5,4 @@
   tasks: 
    - name: Print the helloworld
     ansible.builtin.debug:
-     msg: VYSHU, Good Morning!!!
+     msg: "VYSHU, Good Morning!!!"
