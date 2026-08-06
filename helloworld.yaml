@@ -3,6 +3,6 @@
   hosts: local
   connection: local
   tasks: 
-   -name: Print the helloworld
-    ansible.builtin.debug
+   - name: Print the helloworld
+    ansible.builtin.debug:
      msg: VYSHU, Good Morning!!!
