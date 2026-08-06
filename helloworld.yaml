@@ -7,3 +7,11 @@
      ansible.builtin.debug:
       msg: "hello world 1"
     #  msg: "VYSHU, Good Morning!!!"
+
+- name: ping the server
+  hosts: local
+  connection: local
+  tasks: 
+   - name: Print the helloworld
+     ansible.builtin.debug:
+      msg: "hello world 2"
