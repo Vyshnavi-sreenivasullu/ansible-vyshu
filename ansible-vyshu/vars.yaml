@@ -3,14 +3,15 @@
 - name: ping the server
   hosts: local
   connection: local
+
   vars:
-   COURSE: JAVA
-   TIME: 30 minutes
+    COURSE: JAVA
+    TIME: 30 minutes
 
   tasks: 
    - name: Print the helloworld
      ansible.builtin.debug:
-      msg: "hello {{ COURSE }} baggunnava"
+       msg: "hello {{ COURSE }} baggunnava"
     
 
 # - name: ping the server
