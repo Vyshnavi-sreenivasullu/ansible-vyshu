@@ -9,7 +9,7 @@
   tasks: 
    - name: Print the helloworld
      ansible.builtin.debug:
-      msg: "hello {{ COURSE }}"
+      msg: "hello {{ COURSE }} baggunnava"
     
 
 # - name: ping the server
