@@ -6,7 +6,7 @@
 
   vars:
     COURSE: JAVA
-    TIME: 30 minutes
+    TIME: "30 minutes"
 
   tasks: 
    - name: Print the helloworld
