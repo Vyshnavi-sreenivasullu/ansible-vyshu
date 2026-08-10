@@ -1,17 +1,20 @@
-
+```yaml
 - name: var_files
   hosts: local
   connection: local
-  vars: 
-   Trainer: Vyshnavi
-   AGE: 27
-  tasks:
-  - name: trainer  info
-    ansible.builtin.debug:
-     msg: " Trainer details is {{ Trainer }} and age is {{ AGE }}" 
 
-   - name: trainer  info
-     vars: 
-      Trainer: Cherry
-     ansible.builtin.debug:
-     msg: " Trainer details is {{ Trainer }} and age is {{ AGE }}" 
+  vars:
+    Trainer: Vyshnavi
+    AGE: 27
+
+  tasks:
+    - name: trainer info
+      ansible.builtin.debug:
+        msg: "Trainer details are {{ Trainer }} and age is {{ AGE }}"
+
+    - name: trainer info
+      vars:
+        Trainer: Cherry
+      ansible.builtin.debug:
+        msg: "Trainer details are {{ Trainer }} and age is {{ AGE }}"
+```
