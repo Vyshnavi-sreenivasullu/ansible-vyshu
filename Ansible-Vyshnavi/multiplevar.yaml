@@ -1,0 +1,13 @@
+
+- name: multiple variables
+  hosts: local
+  connection: local
+
+  vars:
+   Trainer: VYSHU
+   Age: 26
+
+  tasks:
+  - name: multiple vars 2 
+    ansible.builtin.debug:
+      msg: "Hello {{ Trainer }} age is {{ Age }} old"   
