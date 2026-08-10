@@ -1,20 +1,22 @@
-```yaml
+
 - name: var_files
   hosts: local
   connection: local
+  vars_prompt: 
+  - name: username
+    prompt: enter your username
+    private: true
 
-  vars:
-    Trainer: Vyshnavi
-    AGE: 27
+  - name: password
+    prompt: enter your password
+    private: true
+
 
   tasks:
-    - name: trainer info
-      ansible.builtin.debug:
-        msg: "Trainer details are {{ Trainer }} and age is {{ AGE }}"
+  - name: trainer  info
+    ansible.builtin.debug:
+     msg: " Trainer details is {{ username }} and age is {{ password }}" 
 
-    - name: trainer info
-      vars:
-        Trainer: Cherry
-      ansible.builtin.debug:
-        msg: "Trainer details are {{ Trainer }} and age is {{ AGE }}"
-```
+  #  - name: trainer  info
+  #   ansible.builtin.debug:
+  #    msg: " Trainer details is {{ Trainer }} and age is {{ AGE }}" 
