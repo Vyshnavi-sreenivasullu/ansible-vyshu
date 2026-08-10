@@ -1,13 +1,11 @@
 
-- name: variable files
+- name: var_files
   hosts: local
   connection: local
-  vars_files:
-   - course.yaml
-   
+  vars: 
+   Trainer: Vyshnavi
+   AGE: 27
   tasks:
-  - name: name of the Trainer
+  - name: trainer  info
     ansible.builtin.debug:
-      msg: " hello {{ Trainer }} good day sir "
-
-  
+     msg: " Trainer details is {{ Trainer }} and age is {{ AGE }}" 
