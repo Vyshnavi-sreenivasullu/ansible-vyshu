@@ -9,3 +9,9 @@
   - name: trainer  info
     ansible.builtin.debug:
      msg: " Trainer details is {{ Trainer }} and age is {{ AGE }}" 
+
+   - name: trainer  info
+  vars: 
+    Trainer: Cherry
+    ansible.builtin.debug:
+     msg: " Trainer details is {{ Trainer }} and age is {{ AGE }}" 
