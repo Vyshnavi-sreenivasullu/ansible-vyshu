@@ -1,16 +1,11 @@
 
 - name: var_files
   hosts: frontend
-  
-  # vars_files: 
-  #  course.yaml
-   
-
+  vars:
+   NUMBER: 19
   tasks:
-  - name: trainer  info
+  - name: trainer  age is
     ansible.builtin.debug:
-     msg: " Trainer details is {{ username }} and age is {{ password }}" 
-
-  #  - name: trainer  info
-  #   ansible.builtin.debug:
-  #    msg: " Trainer details is {{ Trainer }} and age is {{ AGE }}" 
+     msg: " Trainer details age is {{ NUMBER }}   which is  less than 100" 
+    when: NUMBER <100
+ 
