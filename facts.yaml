@@ -5,7 +5,7 @@
   - name: Loops name are 
     ansible.builtin.debug:
      msg: " {{ item }}"
-    loops: 
+    loop: 
      - vyshu
      - sunny
      
