@@ -4,4 +4,8 @@
   tasks:
   - name: gather facts
     ansible.builtin.debug:
-     msg: " {{ ansible_facts }}"
+     msg: " {{ item }}"
+    loops:
+     - vyshu
+     - sunny
+     - sony 
