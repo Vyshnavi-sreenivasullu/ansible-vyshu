@@ -8,4 +8,10 @@
     ansible.builtin.debug:
      msg: " Trainer details age is {{ NUMBER }}   which is  less than 100" 
     when: NUMBER <100
+   - name: trainer  age is
+     vars: 
+      NUMBER: 16
+     ansible.builtin.debug:
+      msg: " Trainer details age is {{ NUMBER }}   which is  less than 100" 
+    when: NUMBER <100
  
