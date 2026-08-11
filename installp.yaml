@@ -3,7 +3,7 @@
   become: yes
   tasks:
   - name: packages installing
-    ansible.builtin.debug:
+    ansible.builtin.package:
      name: " {{ item.name }} "
      name: "{{ item.state }}"
     loop: 
