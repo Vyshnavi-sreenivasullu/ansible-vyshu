@@ -1,0 +1,10 @@
+- name: install package
+  hosts: frontend
+  become: yes
+  tasks:
+  - name: packages installing
+    ansible.builtin.debug:
+     msg: {{item }}
+    loop: 
+    - nginx
+    - mysql
