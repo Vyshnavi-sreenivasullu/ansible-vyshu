@@ -5,7 +5,7 @@
   - name: gather facts
     ansible.builtin.debug:
      msg: " {{ item }}"
-    loops:
+    loops 
      - vyshu
      - sunny
      
