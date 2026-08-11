@@ -1,17 +1,7 @@
-# - name: ansible facts
-#   hosts: local
-#   connection: local
-#   tasks:
-#    - name: facts
-#      anisble.builtin.debug:
-#       msg: " {{ anisble_facts }} "
-
-- name: ansible facts
+- name: facts
   hosts: local
   connection: local
-
   tasks:
-    - name: facts
-      ansible.builtin.debug:
-        msg: "{{ ansible_facts }}"
-```
+  - name: gather facts
+    ansible.builtin.debug:
+     msg: " hello {{ gather_facts }}"
