@@ -1,11 +1,11 @@
-- name: facts
+- name: loop
   hosts: local
   connection: local
   tasks:
-  - name: gather facts
+  - name: LOOps name
     ansible.builtin.debug:
      msg: " {{ item }}"
-    loops 
+    loops: 
      - vyshu
      - sunny
      
